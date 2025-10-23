@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Hospital V1</title></head><body style="font-family:Arial">
+<h1>Hospital V1</h1>
+<p><a href="/data">View current beds & patients</a></p>
+
+<h2>Add bed</h2>
+<form method="post" action="/add_bed">
+  Name: <input name="name"><br>
+  Ward: <input name="ward"><br>
+  Gender (Any/M/F): <input name="gender"><br>
+  Isolation (0/1): <input name="isolation" value="0"><br>
+  <input type="submit" value="Add bed">
+</form>
+
+<h2>Add patient</h2>
+<form method="post" action="/add_patient">
+  Name: <input name="name"><br>
+  Age: <input name="age" type="number"><br>
+  Gender (M/F): <input name="gender"><br>
+  Isolation (0/1): <input name="isolation" value="0"><br>
+  <input type="submit" value="Add patient">
+</form>
+</body></html>
