@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Hospital V4</title></head><body style="font-family:Arial">
+<h1>Hospital V4</h1>
+<nav><a href="/">Home</a> | <a href="/profile">Profile</a> | <a href="/search?q=">Search</a></nav>
+<h2>Add bed</h2>
+<form method="post" action="/add_bed">Name: <input name="name"> Ward: <input name="ward"> Gender: <input name="gender"> Isolation: <input name="isolation" value="0"><input type="submit" value="Add bed"></form>
+<h2>Add patient</h2>
+<form method="post" action="/add_patient">Name: <input name="name"> Age: <input name="age" type="number"> Gender: <input name="gender"> Isolation: <input name="isolation" value="0"><br>Surgeon pref: <input name="surgeon_pref"><input type="submit" value="Add patient"></form>
+</body></html>
