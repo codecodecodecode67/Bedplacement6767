@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hospital Management System V5</title>
+</head>
+<body style="font-family:Arial; margin:0; background:#f4f8fb;">
+  <div style="background:#007BFF; color:white; padding:15px;">
+    <h1 style="margin:0;">St. George's Hospital Bed Management</h1>
+    <p>Welcome {{user}} | <a href="/logout" style="color:white;">Logout</a></p>
+  </div>
+
+  <div style="padding:20px;">
+    <h2>Add a New Bed</h2>
+    <form method="post" action="/add_bed" style="margin-bottom:20px;">
+      <input name="name" placeholder="Bed name"> 
+      <input name="ward" placeholder="Ward"> 
+      <input name="gender" placeholder="Gender (Any/M/F)"> 
+      <input name="isolation" placeholder="Isolation (0/1)" value="0">
+      <button type="submit">Add Bed</button>
+    </form>
+
+    <h2>Add a New Patient</h2>
+    <form method="post" action="/add_patient" style="margin-bottom:20px;">
+      <input name="name" placeholder="Patient name"> 
+      <input name="age" type="number" placeholder="Age"> 
+      <input name="gender" placeholder="Gender (M/F)"> 
+      <input name="isolation" placeholder="Isolation (0/1)" value="0">
+      <input name="surgeon_pref" placeholder="Surgeon preference">
+      <button type="submit">Add Patient</button>
+    </form>
+
+    <h3>Reports</h3>
+    <a href="/assignments">View Assignment History</a> |
+    <a href="/export">Export Patients (CSV)</a>
+  </div>
+</body>
+</html>
